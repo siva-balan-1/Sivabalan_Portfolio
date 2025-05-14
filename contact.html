@@ -136,9 +136,9 @@
             </div>
           </div>
 
-          <div class="col-lg-7">
+          <!-- <div class="col-lg-7">
             <form action="https://formsubmit.co/rengasiva164@gmail.com" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-                 <!-- Hidden options -->
+                 Hidden options
                       <input type="hidden" name="_captcha" value="false">
                       <input type="hidden" name="_template" value="box">
                       <input type="hidden" name="_next" value="https://sivabalan-r-portfolio.netlify.app/thank-you.html">
@@ -179,7 +179,7 @@
                   <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
                 </div>
 
-                <!-- <div class="col-md-12 text-center">
+                <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
@@ -188,11 +188,59 @@
                 </div> -->
                 
 
-              </div>
+              <!-- </div>
               <button type="submit">Send Message</button>
             </form>
           </div>
-          <!-- End Contact Form -->
+          End Contact Form  -->
+          <div class="col-lg-7">
+            <form action="https://formsubmit.co/rengasiva164@gmail.com" method="POST" data-aos="fade-up" data-aos-delay="200">
+              <!-- Hidden fields -->
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="box">
+              <input type="hidden" name="_next" value="https://sivabalan-r-portfolio.netlify.app/thank-you.html">
+          
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required placeholder="Enter Your Name">
+                </div>
+          
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" name="email" id="email-field" class="form-control" required placeholder="Enter correct Email">
+                </div>
+          
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" name="subject" id="subject-field" class="form-control" required placeholder="Reason for message" >
+                </div>
+          
+                <div class="col-md-12">
+                  <label for="contact-field" class="pb-2">Contact No</label>
+                  <input
+                    type="tel"
+                    name="contact"
+                    id="contact-field"
+                    class="form-control"
+                    pattern="[0-9]{10,15}"
+                    maxlength="15"
+                    minlength="10"
+                    required
+                    placeholder="Enter contact number"
+                  >
+                </div>
+          
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea name="message" id="message-field" class="form-control" rows="10" required placeholder="Type your message..."></textarea>
+                </div>
+              </div>
+          
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+          
 
         </div>
 
