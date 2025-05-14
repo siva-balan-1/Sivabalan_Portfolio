@@ -195,51 +195,102 @@
           End Contact Form  -->
           <div class="col-lg-7">
             <form action="https://formsubmit.co/rengasiva164@gmail.com" method="POST" data-aos="fade-up" data-aos-delay="200">
-              <!-- Hidden fields -->
+              
+              <!-- Hidden options for FormSubmit -->
               <input type="hidden" name="_captcha" value="false">
               <input type="hidden" name="_template" value="box">
               <input type="hidden" name="_next" value="https://sivabalan-r-portfolio.netlify.app/thank-you.html">
           
               <div class="row gy-4">
+          
+                <!-- Your Name Field -->
                 <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required placeholder="Enter Your Name">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
                 </div>
           
+                <!-- Your Email Field -->
                 <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" name="email" id="email-field" class="form-control" required placeholder="Enter correct Email">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
                 </div>
           
+                <!-- Subject Field -->
                 <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" name="subject" id="subject-field" class="form-control" required placeholder="Reason for message" >
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" id="subject" name="subject" class="form-control" placeholder="Enter the subject" required>
                 </div>
           
+                <!-- Contact Number Field -->
                 <div class="col-md-12">
-                  <label for="contact-field" class="pb-2">Contact No</label>
-                  <input
-                    type="tel"
-                    name="contact"
-                    id="contact-field"
-                    class="form-control"
-                    pattern="[0-9]{10,15}"
-                    maxlength="15"
-                    minlength="10"
-                    required
-                    placeholder="Enter contact number"
-                  >
+                  <label for="contact" class="form-label">Contact No</label>
+                  <input type="tel" id="contact" name="contact" class="form-control" placeholder="Enter contact number" pattern="[0-9]{10,15}" maxlength="15" minlength="10" required>
                 </div>
           
+                <!-- Message Field -->
                 <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea name="message" id="message-field" class="form-control" rows="10" required placeholder="Type your message..."></textarea>
+                  <label for="message" class="form-label">Message</label>
+                  <textarea id="message" name="message" rows="8" class="form-control" placeholder="Write your message..." required></textarea>
                 </div>
+          
+                <!-- Submit Button -->
+                <div class="col-md-12 text-center pt-3">
+                  <button type="submit" class="btn btn-dark">Send Message</button>
+                </div>
+          
               </div>
-          
-              <button type="submit">Send Message</button>
             </form>
           </div>
+          
+          <!-- Add some custom styles to make it look good -->
+          <style>
+            .form-label {
+              font-weight: bold;
+              margin-bottom: 8px;
+            }
+          
+            .form-control {
+              padding: 12px;
+              border-radius: 5px;
+              border: 1px solid #ccc;
+              box-shadow: none;
+              font-size: 16px;
+            }
+          
+            .form-control:focus {
+              border-color: #007bff;
+              box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+            }
+          
+            .btn-dark {
+              background-color: #343a40;
+              border-color: #343a40;
+              color: white;
+              font-size: 16px;
+              padding: 12px 30px;
+              border-radius: 5px;
+            }
+          
+            .btn-dark:hover {
+              background-color: #495057;
+              border-color: #495057;
+            }
+          
+            .row.gy-4 .col-md-6, .row.gy-4 .col-md-12 {
+              margin-bottom: 15px;
+            }
+          
+            @media (max-width: 767px) {
+              .form-control {
+                font-size: 14px;
+              }
+          
+              .btn-dark {
+                width: 100%;
+              }
+            }
+          </style>
+          
           
 
         </div>
