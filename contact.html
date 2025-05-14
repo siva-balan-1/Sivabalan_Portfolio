@@ -158,6 +158,21 @@
                   <label for="subject-field" class="pb-2">Subject</label>
                   <input type="text" class="form-control" name="subject" id="subject-field" required="">
                 </div>
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Contact No</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    name="subject"
+                    id="subject-field"
+                    pattern="[0-9]{10,15}"
+                    maxlength="15"
+                    minlength="10"
+                    required
+                    placeholder="Enter contact number"
+                  >
+                </div>
+                
 
                 <div class="col-md-12">
                   <label for="message-field" class="pb-2">Message</label>
@@ -171,9 +186,10 @@
 
                   
                 </div> -->
-                <button type="submit">Send Message</button>
+                
 
               </div>
+              <button type="submit">Send Message</button>
             </form>
           </div>
           <!-- End Contact Form -->
