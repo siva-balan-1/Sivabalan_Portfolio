@@ -1357,6 +1357,12 @@ section,
   transition: all 0.3s ease-in-out;
   margin-right: 15px;
 }
+.contact iframe{
+  width: auto;
+  min-width: auto;
+  height: auto;
+ 
+}
 
 .contact .info-item h3 {
   padding: 0;
